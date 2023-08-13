@@ -5,12 +5,17 @@ const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
+function showToDoForm() {
+	document.querySelector("#todo-form").classList.remove("hidden");
+}
+
 function onLoginSubmit(event) {
 	event.preventDefault();
 	const inputUsername = loginInput.value;
 	loginForm.classList.add(HIDDEN_CLASSNAME);
 	localStorage.setItem(USERNAME_KEY, inputUsername);
 	paintGreetings(inputUsername);
+	showToDoForm();
 }
 
 function paintGreetings(username) {
@@ -27,4 +32,5 @@ if (savedUsername === null) {
 } else {
 	// greeting을 보여준다.
 	paintGreetings(savedUsername);
+	showToDoForm();
 }

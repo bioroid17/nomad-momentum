@@ -1,6 +1,6 @@
 const quotes = [
 	{
-		quote: "I never dreamed about success, I worked for it",
+		quote: "I never dreamed about success, I worked for it.",
 		author: "Estee Lauder",
 	},
 	{
