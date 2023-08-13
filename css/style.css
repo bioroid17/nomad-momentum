@@ -63,6 +63,13 @@ footer {
 	display: none;
 }
 
+button {
+	border: none;
+}
+button:hover {
+	cursor: pointer;
+}
+
 #weather {
 	display: flex;
 	flex-direction: column;
@@ -74,6 +81,12 @@ footer {
 	font-size: 150px;
 	font-weight: 500;
 	margin-bottom: 20px;
+}
+
+#login-form button {
+	background-color: green;
+	height: 30px;
+	border-radius: 5px;
 }
 
 #greeting {
@@ -88,7 +101,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 }
-#todo-form input {
+input {
 	border: none;
 	color: white;
 	background-color: transparent;
@@ -97,15 +110,20 @@ footer {
 	border-bottom: 5px solid white;
 	margin: 10px 0px;
 }
-#todo-form input::placeholder {
+input::placeholder {
 	color: white;
 }
 #todo-list {
 	font-size: 20px;
 }
+#todo-list li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
 #todo-list button {
 	background-color: transparent;
-	border: none;
 }
 
 #quote {
